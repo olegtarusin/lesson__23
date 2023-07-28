@@ -59,7 +59,7 @@ let someSize = "135.58dd";
 someSize = parseFloat(someSize);
 console.log(someSize);
 
-let value = 58 + "hello";
+let value = 58 * "hello";
 value = isNaN(value);
 if (value) {
     console.log("результат выражения НаН");
