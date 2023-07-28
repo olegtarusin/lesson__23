@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 23</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__boxtitle">
+                    <h1 class="header__title">Урок номер 23</h1>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main-slider">
+                    <div class="main-slider__slider swiper">
+                        <div class="main-slider__wrapper swiper-wrapper">
+                            <div class="main-slider__slide swiper-slide">
+                                <article class="main-slider__article article">
+                                    <h2 class="article__title">Урок номер 1 - операторы</h2>
+                                    <a href="https://www.youtube.com/watch?v=oSO_StIWaXM" class="article__link"
+                                        target="_blank"><span>ссылка
+                                            на видио</span></a>
+                                    <ul class="article__exercise exercise">
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">console.log("35" + - "22");</h4>
+                                            <span class="exercise__resolt">результат строчка 35-22</span>
+                                            <p class="exercise__text">Ответ получился таким из-за того что + считает все
+                                                операнды стрингами если один из них стринг</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">console.log("35" * "22")</h4>
+                                            <span class="exercise__resolt">результат 770</span>
+                                            <p class="exercise__text">Ответ получился таким, потому что умножение как и
+                                                деление превращает операнды в намбер</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">правельно ли</p>
+                                            <h4 class="exercise__answer">console.log("558" > 22++);</h4>
+                                            <span class="exercise__resolt error">Ошибка</span>
+                                            <p class="exercise__text">инкримент и дикримент не работают с данными,
+                                                только с переменными.
+                                                Правельно стоило написать <span
+                                                    class="exercise__answer">console.log("558" >
+                                                    22 + 1);</span> ответ
+                                                true, потому что при сравнении програма превращает стринговое число
+                                                в обычное</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">правельно ли что ответ будет 1</p>
+                                            <h4 class="exercise__answer">let userCounter = 0;
+                                                <br>let users = userCounter++; <br>
+                                                console.log(users);
+                                            </h4>
+                                            <span class="exercise__resolt error"> ответ 1 неверно правельно 0</span>
+                                            <p class="exercise__text">Потому что инкримент в суфиксной форме , чтоб
+                                                ответ был 1 инкримент стоит поставить в префиксную форму или еще раз
+                                                перед выводом написать users = userCounter++</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">правельно ли</p>
+                                            <h4 class="exercise__answer">console.log(!false && 11 || 18 && !"");
+                                            </h4>
+                                            <span class="exercise__resolt error"> ответ 18 неверно правельно 11</span>
+                                            <p class="exercise__text">!false = true , !"" = true поскольку неравенство
+                                                имеет превый приоретет из заданых операторов ,<br> true && 11 = 11 , 18
+                                                && !"" = !"" поскольку и имеет второй приоретет <br>11 || !"" вернет 11
+                                            </p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">let nameUser = 0; <br> console.log(nameUser ??
+                                                "Без имени");
+                                            </h4>
+                                            <span class="exercise__resolt"> ответ 0</span>
+                                            <p class="exercise__text"> поому что 0 первое значение не являющееся нул или
+                                                андефайнед
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <article class="main-slider__article article">
+                                    <h2 class="article__title">Урок номер 2 - условное ветвление</h2>
+                                    <a href="https://www.youtube.com/watch?v=tFyRhDZgHaU" class="article__link"
+                                        target="_blank"><span>ссылка
+                                            на видио</span></a>
+                                    <ul class="article__exercise exercise">
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">if (1 === "1") { <br>
+                                                console.log("истина"); <br>
+                                                } else <br>{ console.log("ложь");}</h4>
+                                            <span class="exercise__resolt error"> ответом будет ложь</span>
+                                            <p class="exercise__text">строгое приравнивание не меняет тип данных</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">if (5 == "5") { <br>
+                                                console.log("истина"); <br>
+                                                } else { <br>
+                                                console.log("ложь");}</h4>
+                                            <span class="exercise__resolt">истина</span>
+                                            <p class="exercise__text"> не строгое приравнивание меняет тип данных</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer"> let message = (92 &gt; "11" && 50 &lt; 100)
+                                                ?"истина":"ложь" <br>console.log(message)</h4>
+                                            <span class="exercise__resolt"> истина</span>
+                                            <p class="exercise__text">левая часть условия вернет тру правая тоже
+                                                результатом выражеения будет тоже тру</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">if (0) {
+                                                <br> console.log("ложь"); <br>
+                                                } else if (" ") { <br>
+                                                console.log("истина"); <br>
+                                                }
+                                            </h4>
+                                            <span class="exercise__resolt"> истина</span>
+                                            <p class="exercise__text"> первое условие не сработало поскольку 0 выводит
+                                                фолс , из-за этого было обработано второе условие</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <article class="main-slider__article article">
+                                    <h2 class="article__title">Урок номер 3 - циклы</h2>
+                                    <a href="https://www.youtube.com/watch?v=QjDzp-yM_To" class="article__link"
+                                        target="_blank"><span>ссылка
+                                            на видио</span></a>
+                                    <ul class="article__exercise exercise">
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">вывести числа от 1 до 5</p>
+                                            <h4 class="exercise__answer">let num = 1;
+                                                while (num &lt;= 5) { <br>
+                                                --console.log(num); <br>
+                                                --num++; <br>
+                                                }</h4>
+                                            <span class="exercise__resolt"> результат 1.2.3.4.5</span>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">будет ли 0 в конце?</p>
+                                            <h4 class="exercise__answer">let num2 = 8; <br>
+                                                while (num2) console.log(num2--);</h4>
+                                            <span class="exercise__resolt error"> последней цифрой не будет 0 последним
+                                                будет
+                                                единица</span>
+                                            <p class="exercise__text">когда значение нам2 становися равным нулю цыкл
+                                                прекращается, так-как условие выводит фолс </p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">for(let num = 0 ; num &lt; 3; num ++) <br>
+                                                {console.log(`число&{num}`);} <br>=
+                                            </h4>
+                                            <h4 class="exercise__answer">while (num &lt; 3) console.log(`число
+                                                ${num++}`);</h4>
+                                            <span class="exercise__resolt">вывод 0 . 1 . 2</span>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">остановить цикл когда size будет 1</p>
+                                            <h4 class="exercise__answer">
+                                                for (let numb = 0; numb &lt; 2; numb++) { <br>
+                                                --for (let size = 0; size &lt; 3; size++) { <br>
+                                                ----console.log(size); <br>
+                                                --} <br>
+                                                }
+                                            </h4>
+                                            <p class="exercise__text">решиение</p>
+                                            <h4 class="exercise__answer">
+                                                First: <br>
+                                                for (let numb = 0; numb &lt; 2; numb++) { <br>
+                                                --for (let size = 0; size &lt; 3; size++) { <br>
+                                                ----console.log(size); <br>
+                                                ----if (size == 1) { <br>
+                                                ------break First; <br>
+                                                ----} <br>
+                                                --} <br>
+                                                }
+                                            </h4>
+                                            <span class="exercise__resolt"> результат 0 . 1</span>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <article class="main-slider__article article">
+                                    <h2 class="article__title">Урок номер 4 - number</h2>
+                                    <a href="https://www.youtube.com/watch?v=tiHvPGOX5yc" class="article__link"
+                                        target="_blank"><span>ссылка
+                                            на видио</span></a>
+                                    <ul class="article__exercise exercise">
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">правельно округлить число 1.005 до сотых</p>
+                                            <h4 class="exercise__answer">let numOne = 1.005; <br>
+                                                numOne = numOne + Number.EPSILON; <br>
+                                                numOne = Math.round(numOne * 100) / 100;
+                                                console.log(numOne);</h4>
+                                            <p class="exercise__text">второе решение</p>
+                                            <h4 class="exercise__answer">
+                                                let numTwo = 1.005 + Number.EPSILON;;<br>
+                                                numTwo = numTwo.toFixed(2);<br>
+                                                console.log(+numTwo)
+                                            </h4>
+                                            <span class="exercise__resolt"> 1.01</span>
+                                            <p class="exercise__text">Добавляем намбер епсилон чтоб убрать погрешность,
+                                                с помощю унарного + превращаем строку в цифру
+                                            </p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">Получить число из строки let someSize
+                                                ="135.58dd"
+                                            </p>
+                                            <p class="exercise__text">решение</p>
+                                            <h4 class="exercise__answer">
+                                                let someSize = "135.58dd"; <br>
+                                                someSize = parseFloat(someSize); <br>
+                                                console.log(someSize);</h4>
+                                            <span class="exercise__resolt">ответ 135.58 </span>
+                                            <p class="exercise__text">используем именно парсфлот, поскольку число
+                                                дробное</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">Добится подтверждения нан статуса<br>
+                                            </p>
+                                            <h4 class="exercise__answer">
+                                                let value = 58 + "hello";<br>
+                                                value = isNaN(value);<br>
+                                                if (value) {<br>
+                                                console.log("результат выражения НаН");<br>
+                                                }
+                                            </h4>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">
+                                                найти максимальное число
+                                            </p>
+                                            <h4 class="exercise__answer">
+                                                let maxNum = Math.max(10, 58, -150, 0); <br>
+                                                console.log(maxNum);
+                                            </h4>
+                                            <span class="exercise__resolt">результат 58</span>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">
+                                                округлить 58.858
+                                            </p>
+                                            <h4 class="exercise__answer">
+                                                let numLast = 58.858; <br>
+                                                numLast = Math.floor(58.858); <br>
+                                                console.log(numLast); <br>
+                                            </h4>
+                                            <span class="exercise__resolt"> ответ 58</span>
+                                            <p class="exercise__text">чтоб результат был 59 используем флот, который
+                                                округляет до меньшего</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <article class="main-slider__article article">
+                                    <h2 class="article__title">Урок номер 5 - строки</h2>
+                                    <a href="https://www.youtube.com/watch?v=jc5Upe8xIN0" class="article__link"
+                                        target="_blank"><span>ссылка
+                                            на видио</span></a>
+                                    <ul class="article__exercise exercise">
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">
+                                                let fls = "фрилансер"; <br>
+                                                let text = 'привет я ${fls};<br>
+                                                console.log(text);
+                                            </h4>
+                                            <span class="exercise__resolt error">передача текста будет дословной</span>
+                                            <h4 class="exercise__answer">правельная строчка let text = `привет я fls`
+                                            </h4>
+                                            <p class="exercise__text">только обратные кавычки передают переменные
+                                            </p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">получить букву н строки let fls = "фрилансер";
+                                            </p>
+                                            <h4 class="exercise__answer">
+                                                let flsLetter = fls.indexOf('н'); <br>
+                                                flsLetter = fls[flsLetter]; <br>
+                                                console.log(flsLetter);
+                                            </h4>
+                                            <p class="exercise__text">второй способ</p>
+                                            <h4 class="exercise__answer">
+                                                console.log(fls[5]);
+                                            </h4>
+                                            <span class="exercise__resolt">результат 'н' </span>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">решить</p>
+                                            <h4 class="exercise__answer">
+                                                num = 123 + "456";
+                                                console.log(num);<br>
+                                                ожидается 579
+                                            </h4>
+                                            <span class="exercise__resolt error">
+                                                579 не получится , результат будет строка 123456
+                                            </span>
+                                            <p class="exercise__text">так-как один из операндов стринг то результат
+                                                будет
+                                                тоже стринг</p>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">
+                                                сделать строку в верхнем регистре let fls = "фрилансер"
+                                            </p>
+                                            <h4 class="exercise__answer">
+                                                let flsUpper = fls.toUpperCase(); <br>
+                                                console.log(flsUpper);
+                                            </h4>
+                                            <span class="exercise__resolt">вывод ФРИЛАНСЕР</span>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text"> получить часть слова 'лан' из слова
+                                                "фрилансер"
+                                            </p>
+                                            <h4 class="exercise__answer">
+                                                let cutWord = fls.slice(3, 6); <br>
+                                                console.log(cutWord);
+                                            </h4>
+                                            <p class="exercise__text">более сложное решение</p>
+                                            <h4 class="exercise__answer answer--big">
+                                                let souresWord = "Фрилансер"; <br>
+                                                souresWord = souresWord .toLowerCase(); <br>
+                                                let searchWord = "лан"; <br>
+                                                let letterNumber = [];<br>
+                                                if (souresWord .includes( searchWord)) { <br>
+                                                --for (let i = 0; i &lt; searchWord.length; i++) { <br>
+                                                ----letterNumber[i] = souresWord .indexOf (searchWord[i]);
+                                                }
+                                                } else {
+                                                --console.log("такого слова нет в заданном");
+                                                }
+                                                let g = 0;
+                                                let sliceWord = "";
+                                                while (g &lt; letterNumber.length) { <br>
+                                                sliceWord
+                                                +=souresWord[letterNumber[g]]; <br>
+                                                souresWord = souresWord .replace(souresWord [letterNumber[g]], "_");<br>
+                                                ++g; } console.log(sliceWord); <br>
+                                                console.log(souresWord); </h4>
+                                            <span class="exercise__resolt">слово "лан"</span>
+                                        </li>
+                                        <li class="exercise__item">
+                                            <p class="exercise__text">что будет в ответе?</p>
+                                            <h4 class="exercise__answer">let fls = "фрилансер";
+                                                <br>console.log(fls.includes("лан", 4));
+                                            </h4>
+                                            <span class="exercise__resolt error">результат фолс</span>
+                                            <p class="exercise__text">выбило фолс потому что, хоть в слове и есть
+                                                искомое
+                                                сочитание но начинается оно на третьей позиции а не на четвертой</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="swiper-pagination"></div>
+                <p class="footer__text">Все примеры были проработаны смотреть в консоль</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiperscript.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Gaspar';
+    src: url('../fonts/Gaspar.woff2') format('woff2'), url('../fonts/Gaspar.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gaspar';
+    src: url('../fonts/Gaspar-Bold.woff2') format('woff2'), url('../fonts/Gaspar-Bold.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+}

@@ -1,0 +1,214 @@
+[class*="__container"] {
+    max-width: 1250px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    font-family: 'Gaspar', sans-serif;
+    font-style: normal;
+}
+
+.main__container {
+    max-width: 1290px;
+}
+
+.wrapper {
+    background: grey;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__container {
+    padding-top: 0.2rem;
+}
+
+@media (max-width:25em) {
+    .header__container {
+        padding: 0.5em;
+    }
+}
+
+.header__boxtitle {
+    padding: 0.5rem;
+    border: 2px solid #e7e3e5;
+    box-shadow: 0px 2px 10px #1b271f;
+    background: rgb(92, 90, 90);
+}
+
+.header__title {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e7e3e5;
+    text-shadow: 2px 0px 2px #1b271f;
+
+}
+
+.main__container {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.swiper__wrapper {
+    display: flex;
+}
+
+.article {
+    display: grid;
+    gap: 0.5rem;
+    padding: 20px;
+    width: 100%;
+    line-height: 1.2;
+    max-width: 100%;
+
+
+}
+
+.article__title {
+    background: radial-gradient(circle, rgb(233, 237, 15) 0%, rgba(207, 204, 22, 0.419) 100%);
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 1em;
+    color: #373134;
+}
+
+.article__link {
+    color: rgb(104, 158, 104);
+    font-weight: 700;
+    justify-self: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-shadow: 1px 0px 1px #f8f8f5;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.article__link:hover {
+    text-decoration: underline;
+    text-shadow: 1px 0px 1px #f6d20a;
+
+}
+
+.article__link::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../img/image.png') center / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.exercise {
+    display: grid;
+}
+
+@media (min-width:25em) {
+    .exercise {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 0.5rem;
+    }
+}
+
+.exercise__item {
+    border: 1px solid #f6d20a;
+    padding: 1rem;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: gray;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 2px 10px #1b271f;
+}
+
+.exercise__answer {
+    color: rgb(63, 21, 15);
+    font-weight: 700;
+    text-shadow: 1px 0 1px #817010;
+    font-size: 1.2em;
+}
+
+.exercise__resolt {
+    color: rgb(163, 237, 15);
+    padding: 0.2em 1em;
+    border-radius: 1em;
+    border: 1px solid #f6d20a;
+    align-self: flex-start;
+    font-size: 1.2em;
+}
+
+.exercise__text {
+    color: #f6d20a;
+}
+
+.error {
+    background: radial-gradient(circle, rgb(224, 14, 105) 0%, rgba(221, 59, 34, 1) 100%);
+    color: rgb(173, 166, 166);
+
+}
+
+.swiper-pagination-bullet {
+    border-radius: 0%;
+    background: #f6d20a;
+    width: 1.5rem;
+    height: 0.5rem;
+}
+
+@supports (font-size: clamp(0.625rem, 0.4973404255rem + 0.6382978723vw, 1rem)) {
+    [class*="__container"] {
+        font-size: clamp(0.625rem, 0.4973404255rem + 0.6382978723vw, 1rem);
+    }
+}
+
+@supports not (font-size: clamp(0.625rem, 0.4973404255rem + 0.6382978723vw, 1rem)) {
+    [class*="__container"] {
+        font-size: calc(0.625rem + 0.375 * (100vw - 20rem) / 58.75);
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: fixed;
+}
+
+.swiper-button-prev::after {
+    content: "";
+    background: linear-gradient(90deg, #f6d20a 0%, #1b271f00 100%);
+    width: 2em;
+    height: 2em;
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+
+}
+
+.swiper-button-next::after {
+    content: "";
+    background: linear-gradient(90deg, #1b271f00 0%, #f6d20a 100%);
+    width: 2em;
+    height: 2em;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer__container {
+    padding: 2em;
+}
+
+.footer__text {
+    color: #e7e3e5;
+    text-align: center;
+}
