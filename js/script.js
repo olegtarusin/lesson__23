@@ -1,5 +1,6 @@
 "use strict"
 let loc = document.location;
+loc = loc.href;
 console.log(loc);
 console.log("35" + - "22");
 console.log("35" * "22");
